@@ -44,11 +44,13 @@ Voici mes autres questions :
     :home-page  true
     :force-help true
     :no-summary true
-    :help       [:div
-                 [:p "Vous êtes une administration, une collectivité, un délégataire de mission de service public ou une personne de droit public ou privé en charge d’une mission de service public."] [:br]
-                 [:p "Vous produisez ou collectez des données dans le cadre de votre mission de service public et vous vous demandez si les données que contiennent vos documents administratifs sont diffusables en open data ?"] [:br]
-                 [:p "Vous êtes au bon endroit ! Il vous suffit de répondre aux questions suivantes, et vous obtiendrez une réponse simple à vos questions."] [:br]
-                 [:p "Nul besoin d’être un spécialiste de la donnée ou un juriste émérite pour vous y retrouver, ce logigramme s’adresse à tous les agents publics, quel que soit leur niveau de connaissance en la matière. Une aide lexicale vous sera fournie tout au long du logigramme afin de comprendre l’ensemble des termes utilisés. En cas de problème, vous pourrez choisir d’envoyer vos réponses à la mission Etalab et obtiendrez une aide personnalisée."]]
+    :help       "Vous êtes une administration, une collectivité, un délégataire de mission de service public ou une personne de droit public ou privé en charge d’une mission de service public.
+<br/><br/>
+Vous produisez ou collectez des données dans le cadre de votre mission de service public et vous vous demandez si les données que contiennent vos documents administratifs sont diffusables en open data ?
+<br/><br/>
+Vous êtes au bon endroit ! Il vous suffit de répondre aux questions suivantes, et vous obtiendrez une réponse simple à vos questions.
+<br/><br/>
+Nul besoin d’être un spécialiste de la donnée ou un juriste émérite pour vous y retrouver, ce logigramme s’adresse à tous les agents publics, quel que soit leur niveau de connaissance en la matière. Une aide lexicale vous sera fournie tout au long du logigramme afin de comprendre l’ensemble des termes utilisés. En cas de problème, vous pourrez choisir d’envoyer vos réponses à la mission Etalab et obtiendrez une aide personnalisée."
     :choices    [{:answer "Commencer"
                   :goto   "1"
                   :color  "is-success"}]}
@@ -56,11 +58,13 @@ Voici mes autres questions :
    {:name       "1"
     :text       "Votre document administratif est-il achevé ?"
     :start-page true
-    :help       [:div
-                 [:p "Un document administratif correspond à tout document produit ou reçu par une administration dans le cadre de sa mission de service public."] [:br]
-                 [:p "Un document administratif produit peut être une base de données contenant des informations relatives à une mission de service public, i.e. des informations publiques et communicables à tous."] [:br]
-                 [:p "Un document reçu peut être un document fourni par une administration à une autre pour les besoins de sa mission de service public."] [:br]
-                 [:p "Un document n’est pas achevé s’il s’agit d’un brouillon, d’un document de travail, d’une note préalable etc."]]
+    :help       "Un document administratif correspond à tout document produit ou reçu par une administration dans le cadre de sa mission de service public.
+<br/><br/>
+Un document administratif produit peut être une base de données contenant des informations relatives à une mission de service public, i.e. des informations publiques et communicables à tous.
+<br/><br/>
+Un document reçu peut être un document fourni par une administration à une autre pour les besoins de sa mission de service public.
+<br/><br/>
+Un document n’est pas achevé s’il s’agit d’un brouillon, d’un document de travail, d’une note préalable etc."
     :choices    [{:answer  "Oui"
                   :summary "Votre document administratif est achevé."
                   :goto    "2"
@@ -72,9 +76,11 @@ Voici mes autres questions :
 
    {:name    "2"
     :text    "Le document contient-il des données couvertes par un secret légal ?"
-    :help    [:div [:p "Les documents couverts par un secret légal sont définis par " [:a {:href "https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000031366350&idArticle=LEGIARTI000031367708"} "l’article L311-5"]" et " [:a {:href "https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=512397B53F42CA6350525C586C80B197.tplgfr26s_3?idArticle=LEGIARTI000037269056&cidTexte=LEGITEXT000031366350&dateTexte=20190425"} "l’article L311-6"] " du CRPA."] [:br]
-              [:p "L’article L311-5 porte sur les documents qui ne peuvent en aucun cas être communiqués : les documents relatifs au secret des délibérations du Gouvernement, au secret de la défense nationale ou de la sûreté de l’Etat, etc."] [:br]
-              [:p "L’article L311-6 porte sur les documents qui ne peuvent être communicables qu’aux intéressés : les documents qui portent atteinte à la protection de la vie privée ou au secret médical, les documents qui portent une appréciation ou un jugement de valeur sur une personne physique, les document qui font apparaître le comportement d’une personne."]]
+    :help    "Les documents couverts par un secret légal sont définis par [l’article L311-5](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000031366350&idArticle=LEGIARTI000031367708) et [l’article L311-6](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=512397B53F42CA6350525C586C80B197.tplgfr26s_3?idArticle=LEGIARTI000037269056&cidTexte=LEGITEXT000031366350&dateTexte=20190425) du CRPA.
+<br/><br/>
+**L’article L311-5** porte sur les documents qui ne peuvent en aucun cas être communiqués : les documents relatifs au secret des délibérations du Gouvernement, au secret de la défense nationale ou de la sûreté de l’Etat, etc.
+<br/><br/>
+**L’article L311-6** porte sur les documents qui ne peuvent être communicables qu’aux intéressés : les documents qui portent atteinte à la protection de la vie privée ou au secret médical, les documents qui portent une appréciation ou un jugement de valeur sur une personne physique, les document qui font apparaître le comportement d’une personne."
     :choices [{:answer  "Oui"
                :goto    "3"
                :summary "Votre document contient des données couvertes par un secret légal."
@@ -86,9 +92,11 @@ Voici mes autres questions :
 
    {:name    "3"
     :text    "Ces données peuvent-elles être occultées sans que cette opération n’implique des efforts disproportionnés ni que le document ne soit dénaturé ou vidé de son sens ?"
-    :help    [:div [:p "L’occultation est un processus consistant à traiter des données couvertes par un secret légal afin d’empêcher de manière irréversible la découverte de ces secrets."] [:br]
-              [:p "La notion « d'efforts disproportionnés » est laissée à l'appréciation de chaque administration ; on considère que le retrait d'une colonne ou d'une ligne d'une base de données ne constitue pas un effort disproportionné."] [:br]
-              [:p "Un document est « dénaturé » ou « vidé » de son sens s'il ne contient plus de données ou si les données-clés pour la compréhension du document sont enlevées."]]
+    :help    "L’occultation est un processus consistant à traiter des données couvertes par un secret légal afin d’empêcher de manière irréversible la découverte de ces secrets.
+<br/><br/>
+La notion « d'efforts disproportionnés » est laissée à l'appréciation de chaque administration ; on considère que le retrait d'une colonne ou d'une ligne d'une base de données ne constitue pas un effort disproportionné.
+<br/><br/>
+Un document est « dénaturé » ou « vidé » de son sens s'il ne contient plus de données ou si les données-clés pour la compréhension du document sont enlevées."
     :choices [{:answer  "Oui"
                :goto    "4"
                :summary ["Ces données peuvent être occultées par un traitement d'usage courant." "Vous devez occulter les données couvertes par un secret légal."]
@@ -124,9 +132,11 @@ Voici mes autres questions :
 
    {:name    "6"
     :text    "Ces données peuvent-elles être anonymisées sans que cette opération n’implique des efforts disproportionnés ni que le document ne doit dénaturé ou vidé de son sens ?"
-    :help    [:div [:p "L'anonymisation est un processus consistant à traiter des données à caractère personnel afin d'empêcher totalement et de manière irréversible l'identification d'une personne physique. L'anonymisation suppose donc qu'il n'y ait plus aucun lien possible entre l'information concernée et la personne à laquelle elle se rattache. L'identification devient alors totalement impossible. L'anonymisation doit être adaptée à chaque jeu de données."] [:br]
-              [:p "La notion « d'efforts disproportionnés » est laissée à l'appréciation de chaque administration ; on considère que le retrait d'une colonne ou d'une ligne d'une base de données ne constitue pas un effort disproportionné."] [:br]
-              [:p "Un document est « dénaturé » ou « vidé » de son sens s'il ne contient plus de données ou si les données-clés pour la compréhension du document sont enlevées"]]
+    :help    "L'anonymisation est un processus consistant à traiter des données à caractère personnel afin d'empêcher totalement et de manière irréversible l'identification d'une personne physique. L'anonymisation suppose donc qu'il n'y ait plus aucun lien possible entre l'information concernée et la personne à laquelle elle se rattache. L'identification devient alors totalement impossible. L'anonymisation doit être adaptée à chaque jeu de données.
+<br/><br/>
+La notion « d'efforts disproportionnés » est laissée à l'appréciation de chaque administration ; on considère que le retrait d'une colonne ou d'une ligne d'une base de données ne constitue pas un effort disproportionné.
+<br/><br/>
+Un document est « dénaturé » ou « vidé » de son sens s'il ne contient plus de données ou si les données-clés pour la compréhension du document sont enlevées"
     :choices [{:answer  "Oui"
                :summary ["Ces données peuvent être anonymisées." "Vous devez anonymiser les données à caractère personnel."]
                :goto    "oui"

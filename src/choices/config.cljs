@@ -123,11 +123,11 @@ Un document est « dénaturé » ou « vidé » de son sens s'il ne contient
     :help    "Les catégories de documents administratifs nécessaires à l’information du public sont définis dans le Décret n° 2018-1117 du 10/12/2018. Parmi ces informations, sont notamment cités les documents relatifs aux conditions d’organisation de l’administation, de la vie économique, associative, culturelle et sportive, des professions réglementées, etc."
     :choices [{:answer  "Oui"
                :summary "Ces données sont nécessaires à l'information du public."
-               :goto    "6"
+               :goto    "oui"
                :color   "is-success"}
               {:answer  "Non"
                :summary "Ces données ne sont pas nécessaires à l'information du public."
-               :goto    "non"
+               :goto    "6"
                :color   "is-warning"}]}
 
    {:name    "6"

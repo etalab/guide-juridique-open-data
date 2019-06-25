@@ -14,7 +14,15 @@
 
 ;; Customize UI strings
 ;; For example: (def ui-strings {:redo "Restart from scratch})
-(def ui-strings {})
+(def ui-strings
+  {:mail-subject "[Guide Open Data] Demande d'aide ou d'informations complémentaires"}
+  {:mail-body "Bonjour,
+je viens d'utiliser votre guide interactif open data et voici les
+résultats que j'obtiens :
+%s
+Voici mes autres questions :
+...
+"})
 
 ;; Website header
 (def header

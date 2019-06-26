@@ -151,6 +151,6 @@ Un document est « dénaturé » ou « vidé » de son sens s'il ne contient
     :done true}
 
    {:name "oui"
-    :text "Vous devez publier votre document en Open data sur une plateforme dédiée."
+    :text "Vous devez publier votre document en Open data sur une plateforme dédiée. Rendez-vous sur https://www.data.gouv.fr/fr/."
     :done true}])
 

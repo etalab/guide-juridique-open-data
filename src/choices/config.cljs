@@ -33,8 +33,8 @@ Voici mes autres questions :
 
 ;; Website footer
 (def footer
-  {:text    [:div "Ce site a été réalisée par la mission " [:a {:href "https://www.etalab.gouv.fr/"} "Etalab"]", à partir du " [:a {:href "https://www.cada.fr/lacada/consultation-publique-sur-le-guide-pratique-de-la-publication-en-ligne-et-de-la-reutilisation"} "Guide pratique de la publication en ligne et de la réutilisation des données publiques"] " rédigé par la CADA et la CNIL."]
-   :contact "info@data.gouv.fr"})
+  {:text    "Ce site a été réalisée par la mission [Etalab](https://www.etalab.gouv.fr), à partir du [Guide pratique de la publication en ligne et de la réutilisation des données publiques](https://www.cada.fr/lacada/consultation-publique-sur-le-guide-pratique-de-la-publication-en-ligne-et-de-la-reutilisation) rédigé par la CADA et la CNIL.  Le code source de cette page est disponible [ici](https://github.com/etalab/guide-juridique-open-data)."
+   :contact "mathilde.hoang@data.gouv.fr"})
 
 (def score {})
 

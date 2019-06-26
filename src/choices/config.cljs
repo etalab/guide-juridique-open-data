@@ -147,7 +147,7 @@ Un document est « dénaturé » ou « vidé » de son sens s'il ne contient
                :color   "is-warning"}]}
 
    {:name "non"
-    :text "Vous n'êtes pas tenus de publier votre document en Open data."
+    :text "Vous n'êtes pas tenus de publier votre document en Open data. Vous pouvez toutefois participer à la circulation des données entre administrations prévue par l'article 1er de la Loi pour une République numérique de 2016."
     :done true}
 
    {:name "oui"

@@ -33,7 +33,7 @@ Voici mes autres questions :
 
 ;; Website footer
 (def footer
-  {:text    "Ce site a été réalisée par la mission [Etalab](https://www.etalab.gouv.fr), à partir du [Guide pratique de la publication en ligne et de la réutilisation des données publiques](https://www.cada.fr/lacada/consultation-publique-sur-le-guide-pratique-de-la-publication-en-ligne-et-de-la-reutilisation) rédigé par la CADA et la CNIL.  Le code source de cette page est disponible [ici](https://github.com/etalab/guide-juridique-open-data)."
+  {:text    "Ce site a été réalisée par la mission <a href=\"https://www.etalab.gouv.fr\" target=\"new\">Etalab</a>, à partir du <a href=\"https://www.cada.fr/lacada/consultation-publique-sur-le-guide-pratique-de-la-publication-en-ligne-et-de-la-reutilisation\" target=\"new\">Guide pratique de la publication en ligne et de la réutilisation des données publiques</a> rédigé par la CADA et la CNIL.<br/>Le code source de cette page est disponible <a href=\"https://github.com/etalab/guide-juridique-open-data\" target=\"new\">ici</a>."
    :contact "mathilde.hoang@data.gouv.fr"})
 
 (def score {})
@@ -76,7 +76,7 @@ Un document n’est pas achevé s’il s’agit d’un brouillon, d’un documen
 
    {:name    "2"
     :text    "Le document contient-il des données couvertes par un secret légal ?"
-    :help    "Les documents couverts par un secret légal sont définis par [l’article L311-5](https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000031366350&idArticle=LEGIARTI000031367708) et [l’article L311-6](https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=512397B53F42CA6350525C586C80B197.tplgfr26s_3?idArticle=LEGIARTI000037269056&cidTexte=LEGITEXT000031366350&dateTexte=20190425) du CRPA.
+    :help    "Les documents couverts par un secret légal sont définis par <a href=\"https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000031366350&idArticle=LEGIARTI000031367708\" target=\"new\">l’article L311-5</a> et <a href=\"https://www.legifrance.gouv.fr/affichCodeArticle.do;jsessionid=512397B53F42CA6350525C586C80B197.tplgfr26s_3?idArticle=LEGIARTI000037269056&cidTexte=LEGITEXT000031366350&dateTexte=20190425\" target=\"new\">l’article L311-6</a> du CRPA.
 <br/><br/>
 **L’article L311-5** porte sur les documents qui ne peuvent en aucun cas être communiqués : les documents relatifs au secret des délibérations du Gouvernement, au secret de la défense nationale ou de la sûreté de l’Etat, etc.
 <br/><br/>
@@ -151,6 +151,6 @@ Un document est « dénaturé » ou « vidé » de son sens s'il ne contient
     :done true}
 
    {:name "oui"
-    :text "Vous devez publier votre document en Open data sur une plateforme dédiée. Rendez-vous sur [data.gouv.fr](https://www.data.gouv.fr)."
+    :text "Vous devez publier votre document en Open data sur une plateforme dédiée. Rendez-vous sur <a href=\"https://www.data.gouv.fr\" target=\"new\">data.gouv.fr</a>."
     :done true}])
 

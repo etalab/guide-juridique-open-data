@@ -40,7 +40,7 @@ Voici mes autres questions :
 
 (def tree
   [{:name       "0"
-    :text       "Présentation."
+    :text       "Présentation"
     :home-page  true
     :force-help true
     :no-summary true

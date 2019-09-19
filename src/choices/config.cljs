@@ -28,7 +28,7 @@ Voici mes autres questions :
 (def header
   {:title    "Guide juridique de l'Open Data"
    :logo     "/img/logo-etalab-370x250.png"
-   :color    "is-primary"
+   :color    "has-background-white-ter"
    :subtitle "Guide pour la publication des données administratives"})
 
 ;; Website footer

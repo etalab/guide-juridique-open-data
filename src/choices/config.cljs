@@ -40,7 +40,7 @@ Voici mes autres questions :
 
 (def display-score false)
 
-(defn score-function [])
+(defn score-function [scores])
 
 (def tree
   [{:name       "0"

@@ -40,6 +40,8 @@ Voici mes autres questions :
 
 (def display-score false)
 
+(defn score-function [])
+
 (def tree
   [{:name       "0"
     :text       "Présentation"
